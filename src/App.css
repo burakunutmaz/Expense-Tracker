@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  background: linear-gradient(
+    -90deg,
+    rgb(255, 255, 255) 0%,
+    rgba(201, 230, 236, 1) 100%
+  );
+}
+
+.header {
+  display: block;
+  margin-top: 5%;
+}
+
+.header h1 {
+  font-weight: bold;
+  color: dimgray;
+  width: 50%;
+  float: left;
+}
+
+.currencies {
+  display: inline-block;
+  width: 10%;
+  border: none;
+  border-radius: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.total-money {
+  text-align: center;
+  width: 30%;
+  display: inline-block;
+  font-size: 30px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50px;
+  transition: all;
+  transition-duration: 0.5s;
+}
+
+.total-money:hover {
+  transition: all;
+  transition-duration: 0.5s;
+  background-color: rgb(255, 255, 255);
+}
+
+.app {
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.transaction-form {
+  display: inline;
+}
+
+.transaction-form input[type="text"] {
+  width: 40%;
+  border: none;
+  padding: 1%;
+  border-right: 1px solid rgb(202, 202, 202);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.transaction-form input[type="number"] {
+  width: 15%;
+  border: none;
+  padding: 1%;
+  border-right: 1px solid rgb(202, 202, 202);
+}
+
+.transaction-form input[type="date"] {
+  width: 25%;
+  border: none;
+  padding: 1%;
+}
+
+.transaction-form input[type="submit"] {
+  width: 20%;
+  border: none;
+  padding: 1%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: rgb(247, 197, 123);
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+
+.transaction-form input[type="submit"]:hover {
+  background-color: rgb(245, 213, 171);
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+
+.list {
+  height: fit-content;
+  transition-property: all;
+  transition-duration: 0.2s;
+  margin-top: 5%;
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: rgb(247, 247, 247);
+  border-radius: 20px;
+}
+
+.item {
+  margin-top: 2%;
+  display: block;
+  border-radius: 20px;
+}
+
+.item .desc {
+  padding-top: 1%;
+  padding-bottom: 1%;
+  display: inline-block;
+  width: 25%;
+}
+
+.item .price {
+  display: inline-block;
+  border-radius: 20px;
+  width: 15%;
+}
+
+.item .date {
+  padding-top: 1%;
+  padding-bottom: 1%;
+  display: inline-block;
+  width: 20%;
+}
+
+.item:hover .remove-item {
+  transition-property: all;
+  transition-duration: 0.5s;
+  float: right;
+  width: 5%;
+  position: relative;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: black;
+  background-color: rgb(255, 81, 81);
+}
+
+.item .remove-item {
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  text-align: center;
+  float: right;
+  width: 2%;
+  position: relative;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border: none;
+  color: transparent;
+  background-color: transparent;
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+
+.item .remove-item:hover {
+  background-color: rgb(255, 31, 31);
+  color: white;
+}
+
+.positive {
+  background-color: rgb(127, 231, 127);
+}
+
+.negative {
+  background-color: rgb(245, 141, 141);
+}
